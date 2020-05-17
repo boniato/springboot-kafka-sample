@@ -1,0 +1,15 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: kafka-intro
+      #client-id: kafka-samples-client
+      enable-auto-commit: false
+      auto-offset-reset: earliest
+      value-serializer: com.example.kafka.playload.EventSerializer
+    properties: # for KafkaAvroDeserializer
+      schema.registry.url: http://localhost:8081
+      specific.avro.reader: true
+
+message:
+  topic: my-message-topic
