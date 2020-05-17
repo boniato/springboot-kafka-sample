@@ -1,6 +1,4 @@
 # Springboot Kafka Sample
-This is an sample code for kafak.
-
 This project is an example of kafka using Springboot2, kafak, Gradle, Java8.<br>
 
 # Technologies
